@@ -7,16 +7,16 @@ const Item = ({ title, text, defaultOpenValue }) => {
 
   return (
     <div className="space-y-1 md:space-y-0">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center">
         <strong
-          className="hover:text-grayish-purple cursor-pointer"
+          className="hover:text-grayish-purple cursor-pointer w-[90%] "
           onClick={() => setIsOpen(!isOpen)}
         >
           {title}
         </strong>
         <div
           role="button"
-          className="cursor-pointer transition-transform duration-300 ease-in-out"
+          className="cursor-pointer transition-transform duration-300 ease-in-out w-[10%]"
           onClick={() => setIsOpen(!isOpen)}
         >
           <img
